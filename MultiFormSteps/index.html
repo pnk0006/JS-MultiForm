@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <tiles:insertAttribute name="meta" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta name="format-detection" content="telephone=no" />
+    <title>Naveen Test Multi Form GitHub</title>
+    <tiles:insertAttribute name="favicon"/>
+    <link type="text/css" rel="stylesheet" href="css/multiform.css" />
+</head>
+<body class="en" style="background-color:#fff; ">
+
+    <div id="logistics_Uniquote_Create">
+        <!--body form-->
+        <div class="logistics_body_form">
+            <div class="form_process">
+                <h3 class="head">Get a Quote</h3>
+                <div class="form_steps">
+                    <ul class="form_Info_Display">
+                        <li class="part_div on">
+                            <span class="iconImg">
+                                <img class="icon active" src="img/cargo_infoA.png" alt="" />
+                                <img class="icon d-active" src="img/cargo_info.png" alt="" />
+                            </span>
+                            <span class="line_bg line_n"></span>
+                            <p class="step_text">CARGO INFORMATION</p>
+                        </li>
+                        <li class="part_div">
+                            <span class="iconImg">
+                                <img class="icon active" src="img/ship_infoA.png" alt="" />
+                                <img class="icon d-active" src="img/ship_info.png" alt="" />
+                            </span>
+                            <span class="line_bg line_n"></span>
+                            <p class="step_text">SHIPPER INFORMATION</p>
+                        </li>
+                        <li class="part_div">
+                            <span class="iconImg">
+                                <img class="icon active" src="img/cons_infoA.png" alt="" />
+                                <img class="icon d-active" src="img/cons_info.png" alt="" />
+                            </span>
+                            <span class="line_bg line_n"></span>
+                            <p class="step_text">CONSIGNEE INFORMATION</p>
+                        </li>
+                        <li class="part_div">
+                            <span class="iconImg">
+                                <img class="icon active" src="img/adnl_infoA.png" alt="" />
+                                <img class="icon d-active" src="img/adnl_info.png" alt="" />
+                            </span>
+                            <p class="step_text">ADDITIONAL INFORMATION</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logistics_box" id="logistics_Check">
+                <!--part1-->
+                <div id="part1" class="part1_Info">
+                    <h4 class="head-text"><span>PART1</span>CARGO INFORMATION</h4>
+
+                    <div class="form_css part1_Form">
+                        <div class="check">
+                            <p class="label checkBoxValidate">TRANSPORTATION MODE<span class="req">*</span><span class="int">(Multiple)</span><span class="warning weightaName">Please select at least one shipping method</span></p>
+                            <div class="check_icons" id="checkTransIcon" data-value="">
+                                <div class="check_sort" data-value="1" id="courie">
+                                    <span class="check_icon"></span>
+                                    <span class="text">Courier </span>
+                                </div>
+                                <div class="check_sort" data-value="2" id="air">
+                                    <span class="check_icon"></span>
+                                    <span class="text">Air </span>
+                                </div>
+                                <div class="check_sort" data-value="3" id="sea">
+                                    <span class="check_icon"></span>
+                                    <span class="text">Sea </span>
+                                </div>
+                                <div class="check_sort" data-value="4" id="land">
+                                    <span class="check_icon"></span>
+                                    <span class="text">Land Carriage </span>
+                                </div>
+                                <div class="check_sort value5" data-value="5" id="otherCheck">
+                                    <span class="check_icon"></span>
+                                    <span class="text">Others</span>
+                                    <input type="text" style="display: none;" class="input_Others checkOthersinput" maxlength="100" name="others" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="textarea js_val">
+                            <div class="text_place">
+                                <p class="label">COMMODITY/DESCRIPTION<span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <textarea name="" class="textArea_info messageRequired inputValide" id="commudityDiscription" placeholder="" cols="30" rows="5" maxlength="1000"></textarea>
+                                <p id="the-count"><span id="chars">1000</span><span>/1000</span></p>
+                            </div>
+                        </div>
+                        <!-- <div class="row_uploadImages">
+                            <dl id="upLoadFile">
+                                <dt class="" style="display: flex;">
+                                    <div id="uploadFa1">
+                                        <input type="file" class="entaddsm btnUpload" name="file_upload" id="file_upload" />
+                                    </div>
+                                    <span class="text">
+                                        Upload Image/Files(<span id="fileCount">0</span>/3)
+                                        <p class="file_format">RAR,ZIP.DOC.DOCX.PDF.JPG.JPEG and PNG is acceptable.Each is limited to 10MB</p>
+                                    </span>
+                                </dt>
+                                <dd style="padding: 0px 16px;position: relative;" class="entbasesed docAttach">
+                                    <div id="fileType">
+                                    </div>
+                                </dd>
+                            </dl>
+                        </div> -->
+
+
+                        <div class="radio">
+                            <p class="label">CARGO TYPE<span class="req">*</span><span class="int">(Single item)</span></p>
+                            <div class="radio_icons" id="radioTransIcon" data-value="">
+                                <div class="radio_sort general radio_check" data-value="general">
+                                    <label for="general">
+                                        <span class="radio_icon"></span>
+                                    </label>
+                                    <span class="text">General</span>
+                                </div>
+                                <div class="radio_sort chemical" data-value="chemical">
+                                    <label for="chemical">
+                                        <span class="radio_icon"></span>
+                                    </label>
+                                    <span class="text">Chemical</span>
+                                </div>
+                                <div class="radio_sort dangerous" data-value="dangerous">
+                                    <label for="dangerous">
+                                        <span class="radio_icon"></span>
+                                    </label>
+                                    <span class="text">Dangerous</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input_text">
+                            <p class="label-text">Please specify if special substances are present</p>
+                            <div class="text_place">
+                                <input type="text" class="substance_input inputBorderVal" maxlength="1000" id="specifySS" name="specifySS" value="">
+                            </div>
+                        </div>
+                        <!--packing multiple add-->
+                        <div class="packing_Div js_val">
+                            <div class="pack packDelete packClassAdd" id="add_packageAdding">
+                                <div id="add_qwer123">
+                                    <div class="adding_OnclickFunction" >
+                                        <div class="head">
+                                            <div class="text">PACKING<span class="packingCount">1</span></div>
+                                            <div class="del deletePackage del_icon"><span></span>Delete</div>
+                                        </div>
+                                        <div class="pack_body">
+                                            <div class="pack_row">
+                                                <div class="pack_column pakVal">
+                                                    <p class="label">GROSS WEIGHT<span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                                    <input type="text" name="pakWeight" value="" maxlength="10" class="form_input inputValide pakWeight" placeholder="">
+                                                    <span class="pos">KGS</span>
+                                                </div>
+                                                <div class="pack_column">
+                                                    <p class="label" style="margin-left: 32px;">TYPE OF PACKAGE<span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                                    <select class="select_drpdwn packageType" name="packagetype" data-value="">
+                                                        <option value="1">Carton</option>
+                                                        <option value="2">Wooden Case</option>
+                                                        <option value="3">Wooden Pallet</option>
+                                                        <option value="4">Others</option>
+                                                        <!-- <option value="5"></option> -->
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="pack_row">
+                                                <div class="pack_column pakVal">
+                                                    <p class="label2">CARGO DIMENSION<span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                                    <input type="text" name="pakLong" maxlength="10" value="" class="form_input2 inputValide pakLong" placeholder="LONG">
+                                                    <span class="pos">CM</span>
+                                                </div>
+                                                <div class="pack_column mt-75 pakVal">
+                                                    <input type="text" name="pakWide" maxlength="10" value="" class="form_input2 inputValide pakWide" placeholder="WIDE">
+                                                    <span class="pos">CM</span>
+                                                </div>
+                                                <div class="pack_column mt-75 pakVal">
+                                                    <input type="text" name="pakHigh" maxlength="10" value="" class="form_input2 inputValide pakHigh" placeholder="HIGH">
+                                                    <span class="pos">CM</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="add_packing_btn" id="addPackage">
+                                Add new packaging information
+                            </div>
+                        </div>
+                        <!--end-->
+
+                    </div>
+                    <div class="next_div">
+                        <div class="btn_next_row">
+                            <div class="btn_blue_next" data-state="false" id="btn_part1">NEXT</div>                         
+                         </div>
+                    </div>
+                </div>
+
+                <!--part2-->
+                <div id="part2" class="part2_Info" style="display:none">
+                    <h4 class="head-text"><span>PART2</span>SHIPPER INFORMATION</h4>
+
+                    <div class="ship_body">
+                        <div class="row js_val2">
+                            <div class="pack_column">
+                                <p class="label">SHIPPER/COMPANY NAME <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="spCmpnyName" maxlength="100" value="" id="spCmpnyName" class="form_input inputValide" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">COUNTRY <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="spCountry" maxlength="100" value="" id="spCountry"  class="form_input inputValide" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row js_val2">
+                            <div class="pack_column">
+                                <p class="label">CITY <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="spCity" maxlength="100" value="" id="spCity" class="form_input inputValide" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">ADDRESS <span class="req"></span></p>
+                                <input type="text" name="spAddress" maxlength="100" id="spAddress" value="" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="pack_column">
+                                <p class="label">ADDRESS <span class="req"></span></p>
+                                <input type="text" name="spAddress" maxlength="100" id="spAddress" value="" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">ZIP/Post Code <span class="req"></span></p>
+                                <input type="text" name="spZip" maxlength="30" id="spZip" value="" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                        </div> -->
+                        <!-- <div class="row js_val2">
+                            <div class="pack_column">
+                                <p class="label">TELEPHONE <span class="req"></span></p>
+                                <input type="text" name="spTel" maxlength="30" id="spTel" value="" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">EMAIL <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="spEmail" maxlength="100" id="spEmail" value="" class="form_input inputValide emailRequired" placeholder="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="next_div">
+                        <div class="btn_back_row">
+                            <div class="btn_white_back" id="btn_back1">PREVIOUS</div>                         
+                         </div>
+                        <div class="btn_next_row">
+                            <div class="btn_blue_next" data-state="false" id="btn_part2">NEXT</div>                         
+                         </div>
+                    </div>
+                </div>
+
+                <!--part3-->
+                <div id="part3" class="part3_Info" style="display:none">
+                    <h4 class="head-text"><span>PART3</span>CONSIGNEE INFORMATION</h4>
+
+                    <div class="cons_body">
+                        <div class="row js_val3">
+                            <div class="pack_column">
+                                <p class="label">CONSIGNEE/COMPANY NAME <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="cgCmpnyName" value="" maxlength="100" id="cgCmpnyName" class="form_input inputValide" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">COUNTRY <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="cgCountry" value="" maxlength="100" id="cgCountry" class="form_input inputValide" placeholder="">
+                            </div>
+                        </div>
+
+                        <div class="row js_val3">
+                            <div class="pack_column">
+                                <p class="label">CITY <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="cgCity" value="" maxlength="100" id="cgCity" class="form_input inputValide" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">ADDRESS <span class="req"></span></p>
+                                <input type="text" name="cgAddress" value="" maxlength="100" id="cgAddress" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="pack_column">
+                                <p class="label">ADDRESS <span class="req"></span></p>
+                                <input type="text" name="cgAddress" value="" maxlength="100" id="cgAddress" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">ZIP/Post Code <span class="req"></span></p>
+                                <input type="text" name="cgZip" value="" maxlength="30" id="cgZip" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                        </div> -->
+                        <!-- <div class="row js_val3">
+                            <div class="pack_column">
+                                <p class="label">TELEPHONE <span class="req"></span></p>
+                                <input type="text" name="cgTel" value="" maxlength="30" id="cgTel" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">EMAIL <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="cgEmail" value="" maxlength="100" id="cgEmail" class="form_input inputValide emailRequired2" placeholder="">
+                            </div>
+                        </div> -->
+                    </div>
+
+                    <div class="next_div">
+                        <div class="btn_back_row">
+                            <div class="btn_white_back" id="btn_back2">PREVIOUS</div>                         
+                         </div>
+                        <div class="btn_next_row">
+                            <div class="btn_blue_next" data-state="false" id="btn_part3">NEXT</div>                         
+                         </div>
+                    </div>
+                </div>
+
+                <!--part4-->
+                <div id="part4" class="part4_Info" style="display: none;">
+                    <h4 class="head-text"><span>PART4</span>CONTACT INFORMATION</h4>
+
+                    <div class="addnlt_body">
+                        <div class="row">
+                            <div class="pack_column js_val4">
+                                <p class="label">NAME <span class="req">*</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="adName" id="adName" maxlength="100" value="" class="form_input inputValide" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">Ref no <span class="req"></span><span class="int">(Not required)</span></p>
+                                <input type="text" name="adReference" id="adReference" maxlength="100" value="" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                        </div>
+                        <div class="row js_val4">
+                            <div class="pack_column">
+                                <p class="label">EMAIL <span class="req">*</span><span class="int">(The quotation will be sent to this mailbox)</span><span class="warning weightaName">Required field</span></p>
+                                <input type="text" name="adEmail" id="adEmail" value="" maxlength="100" class="form_input inputValide emailRequired3" placeholder="">
+                            </div>
+                            <div class="pack_column">
+                                <p class="label">TELEPHONE <span class="req"></span></p>
+                                <input type="text" name="adTelephone" id="adTelephone" maxlength="30" value="" class="form_input inputBorderVal" placeholder="">
+                            </div>
+                        </div>
+                        <div class="textarea2 js_val4">
+                            <p class="label">REMARK<span class="req"></span></p>
+                            <div class="text_place" style="position: relative;">
+                                <textarea name="adRemarks" id="adRemarks" class="textArea_info messageRequired inputBorderVal" placeholder="" cols="30" rows="5" maxlength="1000"></textarea>
+                                <p id="the-count"><span id="chars2">1000</span><span>/1000</span></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next_div">
+                        <div class="btn_back_row">
+                            <div class="btn_white_back" id="btn_back3">PREVIOUS</div>                         
+                         </div>
+                        <div class="btn_next_row">
+                            <div class="btn_blue_next" data-state="false" id="btn_part4">GET A QUOTE</div>                         
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--end-->
+
+        <!--Please Confirm Your Requistion-->
+        <div id="part1234Confirm" class="part1234_info" style="display: none;">
+            <div class="form_submit">
+                <div class="form_submitHead">
+                    <h3 class="head">Please Confirm Your Requistion</h3>
+                </div>
+                <div class="form_submitBody">
+                    <div class="contact_Details">
+                        <div class="row_h">
+                            <p class="con"><span class="head">To: </span><span class="text" id="adName_Dis"></span></p>
+                            <p class="con"><span class="head">Ref No: </span><span class="text" id="adRef_Dis"></span></p>
+                        </div>
+                        <div class="row_h">
+                            <p class="con"><span class="head">E-mail：</span><span class="text" id="adEmail_Dis"></span></p>
+                            <p class="con"><span class="head">Telephone：</span><span class="text" id="adTelephone_Dis"></span></p>
+                        </div>
+                        <div class="row_h">
+                            <p class="conRem"><span class="head">Remarks：</span><span class="text" id="adRemarks_Dis"></span></p>
+                        </div>
+                    </div>
+
+                    <div class="ship_cargo_Info">
+                        <div class="shippers_Infor">
+                            <h3 class="head">SHIPPER INFORMATION</h3>
+                            <div class="body">
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Shipper /<br/>Company Name
+                                    </div>
+                                    <div class="ryt_clm" id="spCmpnyName_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Country
+                                    </div>
+                                    <div class="ryt_clm" id="spCountry_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        City
+                                    </div>
+                                    <div class="ryt_clm" id="spCity_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Address
+                                    </div>
+                                    <div class="ryt_clm" id="spAddress_Dis">
+                                    </div>
+                                </div>
+                                <!-- <div class="inf_row">
+                                    <div class="lft_clm">
+                                        ZIP/Post Code
+                                    </div>
+                                    <div class="ryt_clm" id="spZip_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Telephone
+                                    </div>
+                                    <div class="ryt_clm" id="spTel_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Email
+                                    </div>
+                                    <div class="ryt_clm" id="spEmail_Dis">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                        <div class="cargo_Infor">
+                            <h3 class="head">CONSIGNEE INFORMATION</h3>
+                            <div class="body">
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Consignee /<br/>Company Name
+                                    </div>
+                                    <div class="ryt_clm" id="cgCmpnyName_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Country
+                                    </div>
+                                    <div class="ryt_clm" id="cgCountry_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        City
+                                    </div>
+                                    <div class="ryt_clm" id="cgCity_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Address
+                                    </div>
+                                    <div class="ryt_clm" id="cgAddress_Dis">
+                                    </div>
+                                </div>
+                                <!-- <div class="inf_row">
+                                    <div class="lft_clm">
+                                        ZIP/Post Code
+                                    </div>
+                                    <div class="ryt_clm" id="cgZip_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Telephone
+                                    </div>
+                                    <div class="ryt_clm" id="cgTel_Dis">
+                                    </div>
+                                </div>
+                                <div class="inf_row">
+                                    <div class="lft_clm">
+                                        Email
+                                    </div>
+                                    <div class="ryt_clm" id="cgEmail_Dis">
+                                    </div>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="cargo_InfoImage">
+                        <div class="img_Infor">
+                            <h3 class="head">CARGO INFORMATION</h3>
+                            <div class="body">
+                                <div class="img_row">
+                                    <div class="lft_clm">
+                                        Transportation mode
+                                    </div>
+                                    <div class="ryt_clm">
+                                        <span id="checkTransIcon_Dis"></span>
+                                        <span id="checkTransIcon_OtherDis"></span>
+                                    </div>
+                                </div>
+                                <div class="img_row">
+                                    <div class="lft_clm">
+                                       Commodity /<br/> descritption
+                                    </div>
+                                    <div class="ryt_clm" style="width: 800px;">
+                                        <p id="commudityDiscription_Dis"></p>
+                                        <div id="fileType_Dis"></div>
+                                    </div>
+                                </div>
+                                <div class="img_row">
+                                    <div class="lft_clm">
+                                       Cargo type
+                                    </div>
+                                    <div class="ryt_clm" style="width: 800px;">
+                                        <p id="radioTransIcon_Dis"></p>
+                                        <p class="remKs">Remarks：<span id="specifySS_Dis"></span></p>
+                                    </div>
+                                </div>
+                                <div class="img_row">
+                                    <div class="lft_clm">
+                                       Packing Quantity
+                                    </div>
+                                    <div class="ryt_clm">
+                                        <span id="packageQuantity_Dis"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="packing_Info">
+                        <div class="packing_divCss">
+                            <div class="head">
+                                <div class="text">PACKING <span class="packDisplayCount">1</span></div>
+                            </div>
+                            <div class="body">
+                                <div class="row">
+                                    <p class="lft">Type of package</p>
+                                    <p class="ryt packageType_Dis" data-value=""></p>
+                                </div>
+                                <div class="row">
+                                    <p class="lft">Gross weight</p>
+                                    <p class="ryt"><span class="pakWeight_Dis"></span>KG</p>
+                                </div>
+                                <div class="row">
+                                    <p class="lft">Cargo unit</p>
+                                    <p class="ryt" style="width:300px;"><span>Long: <span class="pakLong_Dis"></span>cm</span><span>Wide: <span class="pakWide_Dis"></span>cm</span><span>High: <span class="pakHigh_Dis"></span>cm</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="next_div">
+                        <div class="btn_back_row">
+                            <div class="btn_white_back" id="preview_back">BACK</div>                         
+                         </div>
+                        <div class="btn_next_row">
+                            <div class="btn_blue_next" data-state="false" id="btn_confirm" onclick="submitConfirmRequistion()">CONFIRM</div>                         
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="confirm_popUp-box" id="confirmPopup" style="display: none;">
+            <div class="divCss">
+                <div class="head">
+                    <h1><span>Tip</span>
+                    <!-- <span class="close"><img src="img/close.png" /></span> -->
+                </h1>
+                </div>
+                <div class="body">
+                    <div class="succ"><img class="tick" src="img/success.png" /><h3>RFQ has been successfully sent!</h3></div>
+                    <p class="para1">Thank you very much for your RFQ, and ShipParts.com Logistics will<br/>provide you with a quotation.</p>
+                    <p class="para2">You can check the result by email address and inquiry number</p>
+                    <p class="para3">How to view the quotes?</p>
+                    <div class="method">
+                        <h3><span class="sp1">Method 1</span><span class="sp2"> After the quotation from the supplier is made, the quotation will be<br/> 
+                            sent to your email address [<span id="adEmail_Dis2"></span>] for confirmation.</span></h3>
+                        <h3><span class="sp1">Method 2</span><span class="sp2"> You can enter the inquiry number on the logistics homepage for inquiry</span></h3>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <div class="close_btn" id="closeToTransferList">VIEW RFQ LIST</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="js/multiform.js"></script>
+    <script type="text/javascript">
+        // $("#btn_part1").click(function(){						
+        //     // if(!verifyCheck._click()) return;
+        //     if($("#btn_part1").attr('data-state') == 'true' ) {
+        //         $(".part1_Info").hide();
+        //         $(".part2_Info").show();
+        //         $(".form_steps li").eq(1).addClass("on");
+        //     }
+        // });
+        $("#btn_back1").click(function(){						
+            // if(!verifyCheck._click()) return;
+            $(".part2_Info").hide();
+            $(".part1_Info").show();
+            $(".form_process").show();
+            $(".form_steps li").eq(1).removeClass("on");
+        });
+        // $("#btn_part2").click(function(){						
+        //     // if(!verifyCheck._click()) return;
+        //     if($("#btn_part2").attr('data-state') == 'true' ) {
+        //         $(".part2_Info").hide();
+        //         $(".part3_Info").show();
+        //         $(".form_steps li").eq(2).addClass("on");
+        //     }
+        // });
+        $("#btn_back2").click(function(){						
+            // if(!verifyCheck._click()) return;
+            $(".part3_Info").hide();
+            $(".part2_Info").show();
+            $(".form_process").show();
+            $(".form_steps li").eq(2).removeClass("on");
+        });
+        // $("#btn_part3").click(function(){						
+        //     // if(!verifyCheck._click()) return;
+        //     if($("#btn_part3").attr('data-state') == 'true' ) {
+        //         $(".part3_Info").hide();
+        //         $(".part4_Info").show();
+        //         $(".form_steps li").eq(3).addClass("on");
+        //     }
+        // });
+        
+        $("#btn_back3").click(function(){						
+            // if(!verifyCheck._click()) return;
+            $(".part4_Info").hide();
+            $(".part3_Info").show();
+            $(".form_process").show();
+            $(".form_steps li").eq(3).removeClass("on");
+        });
+
+
+        // $("#btn_confirm").click(function(){						
+        //     // if(!verifyCheck._click()) return;
+        //     if($("#btn_part4").attr('data-state') == 'true' ) {
+        //         $(".part4_Info").hide();
+        //         $(".part1234_info").show();
+        //         $(".form_steps li").eq(3).addClass("on");
+        //     }
+        // });
+        $("#preview_back").click(function(){						
+            // if(!verifyCheck._click()) return;
+            $(".part1234_info").hide();
+            $(".part4_Info").show();
+            $(".form_process").show();
+            $(".form_steps li").eq(4).removeClass("on");
+        });
+    </script>
+</body>
+</html>

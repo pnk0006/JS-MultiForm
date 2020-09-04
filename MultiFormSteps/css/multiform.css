@@ -1,0 +1,1134 @@
+#head_top, #new_footer, #foot .entFoot{
+    display: none;
+}
+#foot .entFoot{
+    display: none;
+}
+textarea, input[type="text"], select {
+    -webkit-appearance: none;
+}
+#logistics_Uniquote_Create{
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+}
+.main_Nav{
+    width: 100%;
+    border-bottom: 0.5px solid rgba(153,153,153,0.6);;
+}
+.logistics_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* height: 128px; */
+    max-width: 92.5%;
+    margin: auto;
+    padding: 20px 0px;
+}
+.logistics_nav .logo_left{
+    display: inline-block;
+    width: 206px;
+    height: auto;
+}
+.logistics_nav .logo_left img.logo{
+    width: 206px;
+    height: 42px;
+}
+.logistics_nav .nav_right{}
+.logistics_nav .nav_right ul{
+    display: inline-block;
+}
+.logistics_nav .nav_right ul li{
+    display: inline-block;
+    height: 42px;
+    position: relative;
+    margin: 0px 20px;
+}
+.logistics_nav .nav_right ul li .aLink,
+.logistics_nav .nav_right ul li b{
+    display: inline-block;
+    font-size: 12px;
+    font-family: Roboto-Light;
+    color: #333333;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    line-height: 42px;
+}
+.logistics_nav .nav_right ul li.typeSelect { height:auto; cursor:pointer; }
+.logistics_nav .nav_right ul li.contactCss dl dd a{padding: 0px 8px;margin-bottom: 8px;}
+.logistics_nav .nav_right ul li .aLink, .logistics_nav .nav_right ul li b { display:inline-block; font-size:12px; font-family:Roboto-Light; color:#333333; letter-spacing:1px; padding:0 12px; line-height:42px; }
+.logistics_nav .nav_right ul img { vertical-align:middle; margin:0 10px; }
+.logistics_nav .nav_right ul li.contactCss dl dd a:nth-child(1) img{margin-right: 17px;}
+.logistics_nav .nav_right ul li b { padding:0 5px; cursor:pointer; font-weight:normal; }
+.logistics_nav .nav_right ul .portraitImg { border-radius:100%; width:30px; height:30px;}
+.logistics_nav .nav_right ul li .aLink.hover { color:#0DA6D5; background-color:#fff; height:30px; line-height:30px; padding:0 20px; border-radius:3px; }
+.logistics_nav .nav_right ul li .menuImg { cursor:pointer; padding-left:15px; }
+.logistics_nav .nav_right ul li dl { display:none; position:absolute; top:42px; left:50%; z-index:9; width:148px; height:auto; margin-left:-74px; }
+.logistics_nav .nav_right ul li dl dt { display:block; width:20px; height:20px; background-color:#fff; box-shadow:0 0 10px 0 rgba(0,0,0,0.3); margin:0 auto; transform:rotate(45deg); -ms-transform:rotate(45deg); /* IE 9 */ -moz-transform:rotate(45deg); /* Firefox */-webkit-transform:rotate(45deg); /* Safari 和 Chrome */-o-transform:rotate(45deg);  overflow:hidden;}
+.logistics_nav .nav_right ul li dl dd { position:absolute; z-index:4; left:0; top:10px; display:block; width:100%; height:auto; min-height:115px; background-color:#fff; box-shadow:0 10px 10px 0 rgba(0,0,0,0.3); border-radius:3px; padding:25px 0 10px 0; box-sizing:border-box; overflow:hidden; }
+.logistics_nav .nav_right ul li dl dd a { display:inline-block; float:left; width:100%; height:26px; line-height:24px; font-size:12px; font-weight:400; color:#333; margin-bottom:16px; padding:0 20px; box-sizing:border-box; overflow:hidden; }
+.logistics_nav .nav_right ul li dl dd a:hover { color:#0DA6D5; }
+.logistics_nav .nav_right ul li.contactCss dl{width: 180px;}
+.logistics_body_form{
+    width: 100%;
+    min-width: 1140px;
+    max-width: 1140px;
+    margin: auto;
+    overflow: hidden;
+}
+.logistics_body_form .form_process{
+    padding: 32px 0px;
+}
+.logistics_body_form .form_process h3.head{
+    font-size:30px;
+    font-family:Roboto-Regular;
+    font-weight:bold;
+    line-height:37px;
+    color:rgba(51,51,51,1);
+    letter-spacing:1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.form_steps{
+    margin-top: 24px;
+}
+.form_steps ul.form_Info_Display{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    flex-flow: row wrap;
+}
+.form_steps ul.form_Info_Display li{
+    position: relative;
+    text-align: center;
+    list-style-type: none;
+}
+.form_steps ul.form_Info_Display li span.iconImg{
+    position: relative;
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+    text-align: center;
+}
+.form_steps ul.form_Info_Display li span.iconImg img.icon{
+    width: 100%;
+    height: 100%;
+}
+.form_steps ul.form_Info_Display li.part_div.on span.iconImg img.icon.active{
+    display: block;
+}
+.form_steps ul.form_Info_Display li.part_div.on span.iconImg img.icon.d-active{
+    display: none;
+}
+.form_steps ul.form_Info_Display li.part_div span.iconImg img.icon.active{
+    display: none;
+}
+.form_steps ul.form_Info_Display li span.line_n{
+    position: absolute;
+    height: 1px;
+    width: 75%;
+    display: inline-block;
+    top: 30px;
+    background-color: #999999;
+    left: 185px;
+}
+.form_steps ul.form_Info_Display li.part_div p.step_text{
+    font-size:16px;
+    font-family:Roboto-Regular;
+    font-weight:bold;
+    line-height:19px;
+    color:#999999;
+    letter-spacing:1px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 16px;
+}
+.form_steps ul.form_Info_Display li.part_div.on p.step_text{
+    color: #333333;
+}
+
+
+
+
+.logistics_box{
+    padding: 40px 0px 80px;
+}
+
+.logistics_box h4.head-text{
+    font-size:20px;
+    font-family:Roboto-Regular;
+    font-weight:bold;
+    line-height:24px;
+    color:#333333;
+    letter-spacing:1px;
+    padding-bottom: 11px;
+    border-bottom: 1px dashed #CCCCCC;
+}
+.logistics_box h4.head-text span{
+    color: #2296F3;
+    margin-right: 8px;
+}
+.logistics_box .form_css{
+    font-family:Roboto-Regular;
+}
+.logistics_box .form_css p.label,
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column p.label2{
+    font-size:16px;
+    font-weight:500;
+    line-height:19px;
+    color:#333333;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+.logistics_box .form_css p.label-text{
+    font-size:15px;
+    font-weight:400;
+    line-height:19px;
+    color:#333333;
+    margin-top: 40px;
+    margin-bottom: 16px;
+}
+.logistics_box .form_css p.label span.req,
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column p.label2 span.req{
+    color: #F54336;
+    margin-left: 8px;
+}
+.logistics_box .form_css p.label span.int{
+    color: #999999;
+    font-size:14px;
+    margin-left: 8px;
+}
+.logistics_box .form_css p.label span.warning,
+.logistics_box .form_css p.label2 span.warning,
+.logistics_box .ship_body .row p.label span.warning,
+.logistics_box .cons_body .row p.label span.warning,
+.logistics_box .addnlt_body .row p.label span.warning{
+    line-height: normal;
+    padding-left: 0px;
+    color: red;
+    display: none;
+}
+.logistics_box .form_css p.label.warningBlock span.warning,
+.logistics_box .form_css p.label2.warningBlock span.warning,
+.logistics_box .ship_body .row p.label.warningBlock span.warning,
+.logistics_box .cons_body .row p.label.warningBlock span.warning,
+.logistics_box .addnlt_body .row p.label.warningBlock span.warning{
+    display: inline-block;
+}
+.logistics_box .form_css .check_icons{
+    margin-top: 32px;
+    display: flex;
+    justify-content: space-between;
+}
+.logistics_box .form_css .check_icons .check_sort{
+    display: flex;
+}
+.logistics_box .form_css .check_icons .check_sort .check_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: url(../img/select.png) center center no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+/* .logistics_box .form_css .check_icons .check_sort .check_icon{
+    
+} */
+.logistics_box .form_css .check_icons .check_checked .check_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: url(../img/selected.png) center center no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.logistics_box .form_css .radio_icons{
+    margin-top: 32px;
+    display: flex;
+    justify-content: flex-start;
+}
+.logistics_box .form_css .radio_icons .radio_sort{
+    display: flex;
+    margin-right: 76px;
+}
+.logistics_box .form_css .radio_icons .radio_sort input[type="radio"]{
+    display: none;
+}
+.logistics_box .form_css .radio_icons .radio_sort .radio_icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background: url(../img/radio.png) center center no-repeat;
+    background-size: 22px 22px;
+    vertical-align: middle;
+}
+.logistics_box .form_css .radio_icons .radio_sort.radio_check .radio_icon{
+    background: url(../img/radioS.png) center center no-repeat;
+    background-size: 22px 22px;
+}
+/* .logistics_box .form_css .check_icons .check_sort .check_icon img{
+    width:24px;
+    height:24px;
+}
+.logistics_box .form_css .check_icons .check_sort.check_checked .check_icon img.d-check{
+    display: none;
+}
+.logistics_box .form_css .check_icons .check_sort .check_icon img.d-check{
+    display: block;
+}
+.logistics_box .form_css .check_icons .check_sort .check_icon img.checked{
+    display: none;
+} */
+.logistics_box .form_css .check_icons .check_sort span.text,
+.logistics_box .form_css .radio_icons .radio_sort span.text{
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    color:#333333;
+    margin-left: 11px;
+}
+.logistics_box .form_css .check_icons .check_sort .input_Others{
+    width: 220px;
+    height: 24px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-left: 8px;
+    font-size:16px;
+    font-weight:400;
+    color:#333333;
+}
+.logistics_box .form_css .text_place {
+    position: relative;
+}
+.logistics_box .form_css .text_place textarea.textArea_info{
+    max-width: 1118px;
+    min-width: 1118px;
+    width: 1118px;
+    height: 160px;
+    background: #ECF1F5;
+    border: 1px solid rgba(218,218,218,1);
+    opacity: 1;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #333333;
+    padding: 7px 10px;
+    text-indent: 10px;
+}
+#the-count {
+    font-size:14px;
+    line-height:16px;
+    color:rgba(174,174,174,1);
+    position: absolute;
+    right: 10px;
+    bottom: 16px;
+}
+.logistics_box .form_css .row_uploadImages {
+    width: 100%;
+    background:rgba(237,241,244,1);
+    display: block;
+    line-height: 48px;
+}
+.logistics_box .form_css .row_uploadImages dt{position: relative; cursor: pointer;}
+.logistics_box .form_css .row_uploadImages dt input{
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+    width: 1140px;
+}
+.logistics_box .form_css .row_uploadImages dt span.text{
+    font-size:14px;
+    line-height: 13px;
+    color: rgba(29,107,182,1);
+    letter-spacing: 1px;
+    opacity: 1;
+    cursor: pointer;
+    text-align: left;
+    position: absolute;
+    left: 12px;
+    top: 16px;
+    display: flex;
+}
+.logistics_box .form_css .row_uploadImages dt span.text p.file_format{
+    font-size:14px;
+    line-height:13px;
+    color:#999999;
+    margin-left: 12px;
+}
+.logistics_box .form_css .input_text .text_place input.substance_input{
+    width: 99.80%;
+    height: 48px;
+    line-height: 48px;
+    background-color: #ECF1F5;
+    border: none;
+    border-radius: 2px;
+    font-size:16px;
+    font-weight:500;
+    line-height:19px;
+    color:#333333;
+    text-indent: 10px;
+}
+
+
+.logistics_box .form_css .packing_Div{
+
+}
+.logistics_box .form_css .packing_Div .pack{
+    margin-top: 40px;
+}
+.logistics_box .form_css .packing_Div .pack .head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logistics_box .form_css .packing_Div .pack .head .text{
+    width: 132px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1D86DB;
+    font-size:14px;
+    font-weight:400;
+    line-height:17px;
+    color:#ffffff;
+    letter-spacing:1px;
+}
+.logistics_box .form_css .packing_Div .pack .head .text span{
+    margin-left: 4px;
+}
+.logistics_box .form_css .packing_Div .pack .head .del{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size:14px;
+    font-weight:400;
+    line-height:18px;
+    color:rgba(153,153,153,1);
+    letter-spacing:1px;
+    cursor: pointer;
+}
+.logistics_box .form_css .packing_Div .pack .head .del_icon span{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    background: url(../img/del.png) center center no-repeat;
+    background-size: 18px 18px;
+    vertical-align: middle;
+}
+.logistics_box .form_css .packing_Div .pack .head .del_iconA span{
+    width: 18px;
+    height: 18px;
+    margin-right: 4px;
+    background: url(../img/delA.png) center center no-repeat;
+    background-size: 18px 18px;
+    vertical-align: middle;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body{
+    background:rgba(255,255,255,1);
+    border:2px dashed #4A9EE2;
+    padding: 32px 32px;
+    margin-bottom: 32px;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column{
+    position: relative;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column.mt-75{
+    top: 38px;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column p.label{
+    margin-top: 0px;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column .form_input{
+    width: 522px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #ECF1F5;
+    border: none;
+    border-radius: 2px;
+    font-size:16px;
+    font-weight:500;
+    line-height:19px;
+    color:#333333;
+    text-indent: 10px;
+    position: relative;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column span.pos{
+    position: absolute;
+    right: 16px;
+    bottom: 12px;
+    font-size:16px;
+    font-weight:400;
+    color:#333333;
+    padding-left: 16px;
+    border-left: 1px solid #1583DB;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column .select_drpdwn{
+    width: 522px;
+    height: 48px;
+    border-radius:2px;
+    margin-left: 32px;
+    font-size:16px;
+    line-height:17px;
+    color:rgba(29,107,182,1);
+    letter-spacing:1px;
+    padding-left: 4px;
+    text-align: left;
+    box-sizing: border-box;
+    background-image: url(../img/dropdown.png);
+    background-position: right 0px top 0px;
+    background-repeat: no-repeat;
+    background-color: #ECF1F5;
+    text-indent: 12px;
+    border: none;
+    background-size: 66px 48px;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column .select_drpdwn option{
+    width: 522px;
+    font-size:16px;
+    line-height:17px;
+    color:rgba(29,107,182,1);
+    letter-spacing:2px;
+    background:rgba(255,255,255,1);
+    box-shadow:0px 2px 6px rgba(0,55,111,0.32);
+    border-radius:4px;
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column .select_drpdwn option:hover{
+    font-size:16px;
+    line-height:17px;
+    color:rgba(29,107,182,1);
+}
+.logistics_box .form_css .packing_Div .pack .pack_body .pack_row .pack_column .form_input2{
+    width: 337px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #ECF1F5;
+    border: none;
+    border-radius: 2px;
+    font-size:16px;
+    font-weight:500;
+    line-height:19px;
+    color:#333333;
+    text-indent: 10px;
+    position: relative;
+}
+.logistics_box .form_css .packing_Div .add_packing_btn{
+    width:358px;
+    height:48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;;
+    border:1px solid #2296F3;
+    border-radius:4px;
+    font-size:15px;
+    font-weight:500;
+    line-height:18px;
+    color:#2296F3;
+    letter-spacing:1px;
+    opacity:1;
+    margin: 32px auto 0px;
+    cursor: pointer;
+    background-image: url(../img/add_plus.png);
+    background-size: 20px 20px;
+    background-position: left 30px center;
+    background-repeat: no-repeat;
+}
+.logistics_box .form_css .packing_Div .add_packing_btn img{
+    width:20px;
+    height:20px;
+    margin-right: 12px;
+}
+.logistics_box .form_css .packing_Div .add_packing_btn:hover{
+    background-image: url(../img/add_plusA.png);
+    background-color: #2296F3;
+    color: #ffffff;
+}
+
+.logistics_box .part1_Info .next_div,
+.logistics_box .part2_Info .next_div,
+.logistics_box .part3_Info .next_div,
+.logistics_box .part4_Info .next_div,
+.part1234_info .form_submit .next_div{
+    border-top:1px solid rgba(204,204,204,1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+.logistics_box .part1_Info .next_div .btn_next_row,
+.logistics_box .part2_Info .next_div .btn_next_row,
+.logistics_box .part3_Info .next_div .btn_next_row,
+.logistics_box .part4_Info .next_div .btn_next_row,
+.part1234_info .form_submit .next_div .btn_next_row{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width:200px;
+    height:48px;
+    background-color: #1D86DB;
+    border: 1px solid #1D86DB;
+    border-radius: 4px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.logistics_box .part1_Info .next_div .btn_next_row:hover,
+.logistics_box .part2_Info .next_div .btn_next_row:hover,
+.logistics_box .part3_Info .next_div .btn_next_row:hover,
+.logistics_box .part4_Info .next_div .btn_next_row:hover,
+.part1234_info .form_submit .next_div .btn_next_row:hover{
+    background-color: #369FF3;
+}
+.logistics_box .part2_Info .next_div .btn_back_row,
+.logistics_box .part3_Info .next_div .btn_back_row,
+.logistics_box .part4_Info .next_div .btn_back_row,
+.part1234_info .form_submit .next_div .btn_back_row{
+    margin-top: 32px;
+    margin-bottom: 32px;
+    width:200px;
+    height:48px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #1D86DB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-right: 32px;
+}
+.logistics_box .part2_Info .next_div .btn_back_row:hover,
+.logistics_box .part3_Info .next_div .btn_back_row:hover,
+.logistics_box .part4_Info .next_div .btn_back_row:hover,
+.part1234_info .form_submit .next_div .btn_back_row:hover{
+    background-color: #369FF3;
+    border: 1px solid #369FF3;
+}
+.logistics_box .part2_Info .next_div .btn_back_row:hover .btn_white_back,
+.logistics_box .part3_Info .next_div .btn_back_row:hover .btn_white_back,
+.logistics_box .part4_Info .next_div .btn_back_row:hover .btn_white_back,
+.part1234_info .form_submit .next_div .btn_back_row:hover .btn_white_back{
+    color: #ffffff;
+}
+.logistics_box .part1_Info .next_div .btn_blue_next,
+.logistics_box .part2_Info .next_div .btn_blue_next,
+.logistics_box .part3_Info .next_div .btn_blue_next,
+.logistics_box .part4_Info .next_div .btn_blue_next,
+.part1234_info .form_submit .next_div .btn_blue_next{
+    font-size:16px;
+    font-weight:500;
+    line-height:48px;
+    color:rgba(255,255,255,1);
+    letter-spacing:1px;
+    width: 100%;
+    height:48px;
+    text-align: center;
+}
+.logistics_box .part2_Info .next_div .btn_white_back,
+.logistics_box .part3_Info .next_div .btn_white_back,
+.logistics_box .part4_Info .next_div .btn_white_back,
+.part1234_info .form_submit .next_div .btn_white_back{
+    font-size:16px;
+    font-weight:500;
+    line-height:48px;
+    color:#1D86DB;
+    letter-spacing:1px;
+    width: 100%;
+    height:48px;
+    text-align: center;
+}
+
+.addPic {
+    display: flex;
+    padding: 8px 0px;
+}
+.addPic .newThumbnail{
+    margin: 0px;
+}
+#fileType{
+    display: block;
+}
+#fileType.newThumbnail{
+    display: flex !important;
+    float: none !important;
+    width: 100%;
+    height: auto;
+}
+.addPic img.icon_add{
+    width: 20px;
+    height: 22px;
+    margin-right: 8px;
+}
+.addPic p.file_name{
+    font-size:14px;
+    font-weight:600;
+    line-height:18px;
+    color:rgba(51,51,51,1);
+    letter-spacing:1px;
+    cursor: pointer;
+    width: 185px;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.addPic .icon_del{
+    font-size: 14px;
+    font-weight:600;
+    line-height:18px;
+    color:rgba(30,106,183,1);
+    margin-left: 20px;
+    cursor: pointer;
+}
+.part1_Info .addPic .icon_del,
+.part1234_info  .addPic .icon_view{
+    display: block;
+}
+.part1_Info  .addPic .icon_view, 
+.part1234_info .addPic .icon_del{
+    display: none;
+}
+.addPic .icon_view{
+    font-size: 14px;
+    font-weight:600;
+    line-height:18px;
+    color:rgba(30,106,183,1);
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/** part2 **/
+.logistics_box .ship_body{
+
+}
+.logistics_box .ship_body .row,
+.logistics_box .cons_body .row,
+.logistics_box .addnlt_body .row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logistics_box .ship_body .row p.label,
+.logistics_box .cons_body .row p.label,
+.logistics_box .addnlt_body .row p.label,
+.logistics_box .addnlt_body .textarea p.label,
+.logistics_box .addnlt_body .textarea2 p.label{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #333333;
+    margin-top: 32px;
+    margin-bottom: 24px;
+}
+.logistics_box .ship_body .row p.label span.req,
+.logistics_box .cons_body .row p.label span.req,
+.logistics_box .addnlt_body .row p.label span.req{
+    color: #F54336;
+    margin-left: 8px;
+}
+.logistics_box .ship_body .row .pack_column .form_input,
+.logistics_box .cons_body .row .pack_column .form_input,
+.logistics_box .addnlt_body .row .pack_column .form_input{
+    width: 522px;
+    height: 48px;
+    line-height: 48px;
+    background-color: #ECF1F5;
+    border: none;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #333333;
+    text-indent: 10px;
+    position: relative;
+}
+.logistics_box .addnlt_body .textarea2 textarea.textArea_info{
+    width:1138px;
+    height:160px;
+    background:#ECF1F5;
+    border:1px solid rgba(218,218,218,1);
+    opacity:1;
+    border-radius:2px;
+    font-size:16px;
+    font-weight:500;
+    line-height:19px;
+    color:#333333;
+    padding: 5px 0;
+    text-indent: 10px;
+}
+
+/* input.isError, .inputValidate.isError, textarea.isError{
+    -moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+} */
+
+
+/**form part1234 info**/
+.part1234_info{
+    width: 100%;
+    min-width: 1140px;
+    max-width: 1140px;
+    /* margin: auto; */
+    margin: -120px auto 0px;
+    overflow: hidden;
+}
+.part1234_info .form_submit {
+    font-family: Roboto-Regular;
+    padding: 32px 0px;
+}
+.part1234_info .form_submit .form_submitHead{
+    margin-bottom: 28px;
+}
+.part1234_info .form_submit .form_submitHead h3.head {
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 37px;
+    color: rgba(51,51,51,1);
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.part1234_info .form_submit .form_submitBody{
+    padding: 40px 0px 80px;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h p.con{
+    width: 554px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 0px;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h p.con span.head{
+    width: 180px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h p.con span.text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #666666;
+    width: 400px;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h p.conRem{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 12px 0px;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h p.conRem span.head{
+    width: 172px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #333333;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .row_h p.conRem span.text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #666666;
+    width: 960px;
+}
+.part1234_info .form_submit .form_submitBody .contact_Details .rem .exp{
+    font-size:15px;
+    font-weight:400;
+    line-height:24px;
+    color:#666666;
+    width: 800px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    margin-top: 32px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor{
+    width: 554px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor h3.head,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor h3.head,
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor h3.head{
+    background-color: #1D86DB;
+    font-size:16px;
+    font-weight:bold;
+    line-height:38px;
+    color:#ffffff;
+    height: 38px;
+    padding-left: 16px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor .body,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor .body,
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor .body{
+    padding: 12px 0px 20px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor .inf_row,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor .inf_row,
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor .img_row{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    padding: 12px 0px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor .inf_row .lft_clm,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor .inf_row .lft_clm,
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor .img_row .lft_clm{
+    width: 180px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor .inf_row .lft_clm,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor .inf_row .lft_clm,
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor .img_row .lft_clm{
+    font-size:16px;
+    font-weight:500;
+    line-height:24px;
+    color:#333333;
+    width: 180px;
+}
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .shippers_Infor .inf_row .ryt_clm,
+.part1234_info .form_submit .form_submitBody .ship_cargo_Info .cargo_Infor .inf_row .ryt_clm,
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor .img_row .ryt_clm{
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    color:#666666;
+    width: 350px;
+}
+.part1234_info .form_submit .form_submitBody .cargo_InfoImage .img_Infor .img_row .ryt_clm p.remKs{
+    margin-top: 14px;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info{
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+    width: 1140px;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss{
+    width: 554px;
+    min-width: 554px;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .head{
+
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .head .text{
+    width:120px;
+    height:28px;
+    background:rgba(255,255,255,1);
+    border:1px solid #4A9EE2;
+    font-size:14px;
+    font-weight:400;
+    line-height:28px;
+    color:#1D86DB;
+    text-align: center;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body{
+    border-top:1px dashed #4A9EE2;
+    padding: 24px 0px 24px;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body .row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 12px 0px;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body .row p.lft{
+    width: 150px;
+    font-size:16px;
+    font-weight:400;
+    line-height:19px;
+    color:#333333;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body .row p.ryt{
+    font-size:16px;
+    font-weight:400;
+    line-height:19px;
+    color:#666666;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body .row p.ryt span{
+    margin-right: 6px;
+    word-break: initial;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body .row p.ryt span:nth-child(3){
+    margin-right: 0px;
+}
+.part1234_info .form_submit .form_submitBody .packing_Info .packing_divCss .body .row p.ryt span span{
+    margin-left: 6px;
+    margin-right: 0px;
+    /* word-break: initial*/
+}
+
+.confirm_popUp-box{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(19,24,32,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+}
+.confirm_popUp-box .divCss{
+    background: #fff;
+    width: 620px;
+    height: 630px;
+    box-shadow: 0px 2px 12px 0px rgba(222,222,222,1);
+    border-radius: 4px;
+}
+.confirm_popUp-box .divCss .head{
+    height: 58px;
+    border-bottom: 1px solid #EAEDF3;
+}
+.confirm_popUp-box .divCss .head h1{
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 44px;
+    color: #333333;
+    padding: 0px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.confirm_popUp-box .divCss .head h1 span.close{
+    width: 12px;
+    height: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.confirm_popUp-box .divCss .body{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    text-align: center;
+    padding: 0px 44px;
+}
+.confirm_popUp-box .divCss .body .succ{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 41px;
+}
+.confirm_popUp-box .divCss .body .succ img.tick{
+    width: 48px;
+    height: 48px;
+    margin-right: 22px;
+}
+.confirm_popUp-box .divCss .body .succ h3{
+    font-size:26px;
+    font-weight:500;
+    line-height:32px;
+    color:#333333;
+}
+.confirm_popUp-box .divCss .body p.para1{
+    font-size:16px;
+    font-weight:400;
+    line-height:24px;
+    color:#2296F3;
+    margin-top: 24px;
+}
+.confirm_popUp-box .divCss .body p.para2{
+    font-size:14px;
+    font-weight:400;
+    line-height:17px;
+    color:#666666;
+    margin-top: 24px;
+}
+.confirm_popUp-box .divCss .body p.para3{
+    font-size:20px;
+    font-weight:500;
+    line-height:24px;
+    color:#333333;
+    margin-top: 66px;
+}
+.confirm_popUp-box .divCss .body .method{
+    margin-top: 42px;
+    position: relative;
+}
+.confirm_popUp-box .divCss .body .method::before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 39.5%;
+    width: 120px;
+    height: 1px;
+    background-color: rgba(128,187,234,1);
+    display: block;
+}
+.confirm_popUp-box .divCss .body .method h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    text-align: left;
+}
+.confirm_popUp-box .divCss .body .method h3 span.sp1{
+    font-size:14px;
+    font-weight:500;
+    line-height:17px;
+    color: #333333;
+    width: 82px;
+    text-align: left;
+}
+.confirm_popUp-box .divCss .body .method h3 span.sp2{
+    font-size:14px;
+    font-weight:400;
+    line-height:26px;
+    color: #666666;
+    text-align: left;
+}
+.confirm_popUp-box .divCss .bottom{
+    margin-top: 61px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.confirm_popUp-box .divCss .bottom div.close_btn{
+    width: 158px;
+    height: 48px;
+    background: rgba(29,134,219,1);
+    box-shadow: 0px 1px 1px rgba(22,29,37,0.1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 48px;
+    color: #ffffff;
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+#fileType_Dis{
+    margin-top: 24px;
+}
